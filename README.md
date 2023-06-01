@@ -1,22 +1,14 @@
 # svelte-v4-custom-element-slots
 
-Demos an issue using slots with custom elements in Svelte 4 (pre-release).
+Demos an issue using slots with custom elements in Svelte 4 (pre-release) when **no** shadow root is in use.
 
 
 ## Get started
-
-Init repo
 
 ```bash
 git clone https://github.com/patricknelson/svelte-v4-custom-element-slots.git
 cd svelte-v4-custom-element-slots
 npm i
-```
-
-Reproduce bug
-
-```bash
-git checkout main
 npm run dev
 ```
 

@@ -2,18 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Svelte</title>
+		<style>
+			.element-wrapper {
+				margin: 20px 0;
+				padding: 0 10px;
+				border: 1px solid red; /* make boundaries between custom elements more visible to help demonstrate slot placement */
+			}
+			.replaced {
+				background-color: cornsilk;
+			}
+		</style>
   </head>
   <body>
-    <example-shadow>
-			<p slot="example">replaced slot</p>
-		</example-shadow>
 
-    <example-no-shadow>
-			<p slot="example">replaced slot</p>
-		</example-no-shadow>
+    <div class="element-wrapper">
+			<example-shadow>
+				<p class="replaced" slot="slot2">replaced slot2</p>
+				<p class="replaced" slot="slot1">replaced slot1</p>
+			</example-shadow>
+		</div>
+
+    <div class="element-wrapper">
+			<example-no-shadow>
+				<p class="replaced" slot="slot2">replaced slot2</p>
+				<p class="replaced" slot="slot1">replaced slot1</p>
+			</example-no-shadow>
+		</div>
 
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -1,4 +1,3 @@
-<!-- Redundant if using the create_custom_element() workaround (see main.js) -->
 <svelte:options
 	customElement={{
 		tag: 'example-shadow',
@@ -6,13 +5,14 @@
 	}}
 />
 
-<div class="wrap">
-	<h1>Shadow: open</h1>
-	<slot name="example">Placeholder</slot>
-</div>
+<h2>shadow: 'open'</h2>
+<p>Slot 1:</p>
+<slot name="slot1"><p>Fallback content 1</p></slot>
+<p>Slot 2:</p>
+<slot name="slot2"><p>Fallback content 1</p></slot>
 
 <style>
-	.wrap {
-		border: 1px dotted red;
+	p {
+		background-color: azure;
 	}
 </style>
