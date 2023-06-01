@@ -1,6 +1,6 @@
-# svelte-v4-custom-elements-define
+# svelte-v4-custom-element-slots
 
-Demos an issue with manually defining custom elements in Svelte 4 (pre-release) using `customElements.define()`.
+Demos an issue using slots with custom elements in Svelte 4 (pre-release).
 
 
 ## Get started
@@ -8,8 +8,8 @@ Demos an issue with manually defining custom elements in Svelte 4 (pre-release) 
 Init repo
 
 ```bash
-git clone https://github.com/patricknelson/svelte-v4-custom-elements-define.git
-cd svelte-v4-custom-elements-define
+git clone https://github.com/patricknelson/svelte-v4-custom-element-slots.git
+cd svelte-v4-custom-element-slots
 npm i
 ```
 
@@ -20,12 +20,6 @@ git checkout main
 npm run dev
 ```
 
-Test workaround
-
-```bash
-git checkout workaround
-npm run dev
-```
 
 ## From scratch
 
