@@ -7,7 +7,7 @@
 
 <h2>shadow: 'none' (default slot)</h2>
 <p>Default slot:</p>
-<slot><p>Fallback content 1</p></slot>
+<slot><p>Fallback default content</p></slot>
 
 <style>
 	p {
