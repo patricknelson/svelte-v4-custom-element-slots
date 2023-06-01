@@ -1,5 +1,7 @@
-import ExampleElement from './lib/ExampleElement.svelte';
+import ExampleShadow from './lib/ExampleShadow.svelte';
+import ExampleNoShadow from './lib/ExampleNoShadow.svelte';
 
-// ExampleElement is now a Svelte component and thus not compatible with customElements.define()
-// NOTE: See 'workaround' branch for alternative.
-customElements.define('example-element', ExampleElement);
+export {
+	ExampleShadow,
+	ExampleNoShadow,
+};

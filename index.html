@@ -7,7 +7,14 @@
     <title>Vite + Svelte</title>
   </head>
   <body>
-    <example-element></example-element>
+    <example-shadow>
+			<p slot="example">replaced slot</p>
+		</example-shadow>
+
+    <example-no-shadow>
+			<p slot="example">replaced slot</p>
+		</example-no-shadow>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
